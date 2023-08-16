@@ -1,9 +1,9 @@
 from flask import Blueprint
 
-bp = Blueprint("orders", __name__, url_prefix="")
+orders = Blueprint("orders", __name__, url_prefix="")
 
 
-@bp.route("/")
+@orders.route("/")
 def index():
     return "Order Up!"
 
